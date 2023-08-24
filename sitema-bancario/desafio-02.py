@@ -49,8 +49,8 @@ def criar_usuarios(usuarios):
         print("Usuário já cadastrado com este CPF!")
         return 
     nome = input("Nome completo:")
-    data_nascimento = input("Data de nascimento: (dd-mm-aaaa)")
-    endereco = input("Digite seu endereço: Logradouro, nº - Bairro - Cidade/Sigla Estado")
+    data_nascimento = input("Data de nascimento (dd-mm-aaaa): ")
+    endereco = input("Digite seu endereço (Logradouro, nº - Bairro - Cidade/Sigla Estado):" )
     usuarios.append({"cpf":cpf,"nome":nome, "data_nascimento":data_nascimento, "endereco":endereco})  
     print("Usuário criado com sucesso!")
     
@@ -88,7 +88,7 @@ def main():
     while True:
         opcao = menu()        
         if opcao == "d" or opcao == "D":
-            valor_deposito = float(input("Iforme o valor a ser depositado:"))
+            valor_deposito = float(input("Informe o valor a ser depositado:"))
             saldo, extrato = depositar(saldo, valor_deposito, extrato)
         elif opcao == "s" or opcao == "s":
             valor_saque = float(input("Informe o valor a ser sacado:"))

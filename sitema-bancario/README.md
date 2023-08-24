@@ -1,0 +1,2 @@
+# SISTEMA BANCÁRIO
+Objetivo é criar um programa básico em Python para implementar três operações essenciais: depósito, saque e extrato. O sistema será desenvolvido para um banco que busca monetizar suas operações. 
